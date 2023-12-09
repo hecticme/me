@@ -22,3 +22,8 @@
   src: url('/fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
   font-style: italic;
 }
+
+:root {
+  --header-font: 'Playfair Display';
+  --text-font: 'Raleway';
+}
