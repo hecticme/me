@@ -12,7 +12,7 @@ const currentRouteName = computed(() => router.currentRoute.value.name);
     <nav class="header__nav-container">
       <ul class="nav-container__nav-links">
         <li v-for="link in navLinks">
-          <NuxtLink 
+          <NuxtLink
             class="nav-links__link"
             :class="{ active: currentRouteName === link }"
             :to="`/${link}`"
