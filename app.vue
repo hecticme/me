@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
   titleTemplate: (pageTitle) =>
-    pageTitle ? `${pageTitle} - Hecticme.` : 'Hecticme.',
+    pageTitle ? `${pageTitle} - hecticme.` : 'hecticme.',
 });
 </script>
 
