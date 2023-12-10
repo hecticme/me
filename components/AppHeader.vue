@@ -7,13 +7,15 @@ const currentRouteName = computed(() => router.currentRoute.value.name);
 
 <template>
   <header class="header">
-    <div class="header__title">hecticme.</div>
+    <div class="header__title">
+      <NuxtLink class="link" to="/">hecticme.</NuxtLink>
+    </div>
 
     <nav class="header__nav-container">
       <ul class="nav-container__nav-links">
         <li v-for="link in navLinks">
           <NuxtLink
-            class="nav-links__link"
+            class="link nav-links__link"
             :class="{ active: currentRouteName === link }"
             :to="`/${link}`"
           >
@@ -50,9 +52,7 @@ const currentRouteName = computed(() => router.currentRoute.value.name);
 
 .nav-links__link {
   position: relative;
-  color: black;
   font-size: var(--font-14);
-  text-decoration: none;
   text-transform: uppercase;
   padding-inline: 0.75rem;
   padding-block: 0.5rem;
