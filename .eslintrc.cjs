@@ -45,6 +45,14 @@ module.exports = {
       'error',
       2,
     ],
+    'vue/multi-word-component-names': [
+      'error',
+      {
+        ignores: [
+          'index',
+        ],
+      },
+    ],
     '@stylistic/no-tabs': [
       'error',
     ],
