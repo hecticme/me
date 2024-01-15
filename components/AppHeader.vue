@@ -1,14 +1,24 @@
 <script setup lang="ts">
-const navLinks = ref(['works', 'about']);
+const navLinks = ref([
+  'works',
+  'about',
+]);
 
 const router = useRouter();
-const currentRouteName = computed(() => router.currentRoute.value.name);
+const currentRouteName = computed(
+  () => router.currentRoute.value.name
+);
 </script>
 
 <template>
   <header class="header">
     <div class="header__title">
-      <NuxtLink class="link" to="/">hecticme.</NuxtLink>
+      <NuxtLink
+        class="link"
+        to="/"
+      >
+        hecticme.
+      </NuxtLink>
     </div>
 
     <nav class="header__nav-container">
