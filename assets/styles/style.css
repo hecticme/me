@@ -1,4 +1,4 @@
-@import 'fonts';
-@import 'reset';
-@import 'transition';
-@import 'global';
+@import './_fonts.css';
+@import './_reset';
+@import './_transition';
+@import './_global';
