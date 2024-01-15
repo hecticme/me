@@ -21,7 +21,7 @@
   align-items: center;
   gap: 1rem;
 
-  &__say-hi {    
+  &__say-hi {
     h1 {
       font-family: var(--header-font);
       font-size: 4rem;

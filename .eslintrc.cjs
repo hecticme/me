@@ -1,35 +1,74 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es2021": true
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  extends: [
+    'plugin:vue/vue3-essential',
+  ],
+  overrides: [
+    {
+      env: {
+        node: true,
+      },
+      files: [
+        '.eslintrc.{js,cjs}',
+      ],
+      parserOptions: {
+        sourceType: 'script',
+      },
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:vue/vue3-essential"
+  ],
+  parser: 'vue-eslint-parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+    parser: '@typescript-eslint/parser',
+    sourceType: 'module',
+  },
+  plugins: [
+    '@stylistic',
+    '@typescript-eslint',
+  ],
+  rules: {
+    '@stylistic/comma-dangle': [
+      'error',
+      'always-multiline',
     ],
-    "overrides": [
-        {
-            "env": {
-                "node": true
-            },
-            "files": [
-                ".eslintrc.{js,cjs}"
-            ],
-            "parserOptions": {
-                "sourceType": "script"
-            }
-        }
+    '@stylistic/eol-last': [
+      'error',
     ],
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "parser": "@typescript-eslint/parser",
-        "sourceType": "module"
-    },
-    "plugins": [
-        "@typescript-eslint",
-        "vue"
+    '@stylistic/function-call-spacing': [
+      'error',
+      'never',
     ],
-    "rules": {
-    }
-}
+    '@stylistic/indent': [
+      'error',
+      2,
+    ],
+    '@stylistic/no-tabs': [
+      'error',
+    ],
+    '@stylistic/no-trailing-spaces': [
+      'error',
+    ],
+    '@stylistic/object-curly-spacing': [
+      'error',
+      'always',
+    ],
+    '@stylistic/quotes': [
+      'error',
+      'single',
+      {
+        avoidEscape: true,
+      },
+    ],
+    '@stylistic/quote-props': [
+      'error',
+      'as-needed',
+    ],
+    '@stylistic/semi': [
+      'error',
+      'always',
+    ],
+  },
+};
