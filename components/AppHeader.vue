@@ -40,19 +40,19 @@ const currentRouteName = computed(
   </header>
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-inline: 2rem;
   padding-block: 1rem;
+}
 
-  &__title {
-    font-family: var(--header-font);
-    font-size: var(--font-18);
-    font-weight: 500;
-  }
+.header__title {
+  font-family: var(--header-font);
+  font-size: var(--font-18);
+  font-weight: 500;
 }
 
 .nav-container__nav-links {
@@ -72,32 +72,21 @@ const currentRouteName = computed(
   transition-property: color, background-color;
   transition-duration: 150ms;
   transition-timing-function: var(--cubic-bezier);
+}
 
-  &::after {
-    content: '';
-    position: absolute;
-    top: 85%;
-    inset-inline: 10%;
-    height: 2px;
-    background-color: black;
-    transition-property: inset-inline;
-    transition-duration: 150ms;
-    transition-timing-function: var(--cubic-bezier);
-  }
+.nav-links__link::after {
+  content: '';
+  position: absolute;
+  top: 85%;
+  inset-inline: 10%;
+  height: 2px;
+  background-color: black;
+  transition-property: inset-inline;
+  transition-duration: 150ms;
+  transition-timing-function: var(--cubic-bezier);
+}
 
-  &:is(:hover, :focus) {
-    &::after {
-      inset-inline: 25%;
-    }
-  }
-
-  &.active {
-    background-color: black;
-    color: white;
-
-    &::after {
-      background-color: white;
-    }
-  }
+.nav-links__link:is(:hover, :focus)::after {
+  inset-inline: 25%;
 }
 </style>
