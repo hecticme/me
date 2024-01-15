@@ -32,7 +32,16 @@ module.exports = {
   rules: {
     '@stylistic/comma-dangle': [
       'error',
-      'always-multiline',
+      {
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        imports: 'always-multiline',
+        exports: 'always-multiline',
+        functions: 'never',
+        enums: 'always-multiline',
+        generics: 'never',
+        tuples: 'always-multiline',
+      },
     ],
     '@stylistic/eol-last': [
       'error',
