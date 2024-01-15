@@ -1,35 +1,31 @@
 @font-face {
   font-family: 'Playfair Display';
-  src: url('/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  src:
+    url('/fonts/PlayfairDisplay-VariableFont_wght.ttf')
+    format('truetype');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Playfair Display';
-  src: url('/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf')
+  src:
+    url('/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf')
     format('truetype');
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url('/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+  src:
+    url('/fonts/Raleway-VariableFont_wght.ttf')
+    format('truetype');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url('/fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+  src:
+    url('/fonts/Raleway-Italic-VariableFont_wght.ttf')
+    format('truetype');
   font-style: italic;
-}
-
-:root {
-  --header-font: 'Playfair Display';
-  --text-font: 'Raleway';
-
-  --font-12: 0.75rem;
-  --font-14: 0.875rem;
-  --font-16: 1rem;
-  --font-18: 1.125rem;
-  --font-24: 1.5rem;
 }

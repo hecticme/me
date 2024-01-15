@@ -1,4 +1,12 @@
+@import './_variables.css';
 @import './_fonts.css';
 @import './_reset';
-@import './_transition';
-@import './_global';
+
+body {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
