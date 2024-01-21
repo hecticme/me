@@ -30,6 +30,7 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
+    'no-unexpected-multiline': 'error',
     '@stylistic/comma-dangle': [
       'error',
       {
