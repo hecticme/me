@@ -62,6 +62,15 @@ module.exports = {
         ],
       },
     ],
+    '@stylistic/no-multi-spaces': [
+      'error',
+      {
+        ignoreEOLComments: false,
+        exceptions: {
+          Property: true,
+        },
+      },
+    ],
     '@stylistic/no-tabs': [
       'error',
     ],
