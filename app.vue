@@ -2,7 +2,7 @@
 useHead({
   titleTemplate: (pageTitle) =>
     pageTitle ? `${pageTitle} - hecticme.` : 'hecticme.',
-});
+})
 </script>
 
 <template>

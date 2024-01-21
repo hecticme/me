@@ -2,12 +2,12 @@
 const navLinks = ref([
   'works',
   'about',
-]);
+])
 
-const router = useRouter();
+const router = useRouter()
 const currentRouteName = computed(
   () => router.currentRoute.value.name
-);
+)
 </script>
 
 <template>
