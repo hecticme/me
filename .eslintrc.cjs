@@ -85,7 +85,10 @@ module.exports = {
     ],
     '@stylistic/semi': [
       'error',
-      'always',
+      'never',
+      {
+        beforeStatementContinuationChars: 'never',
+      },
     ],
     '@stylistic/space-before-function-paren': [
       'error',
