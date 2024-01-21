@@ -87,5 +87,9 @@ module.exports = {
       'error',
       'always',
     ],
+    '@stylistic/space-before-function-paren': [
+      'error',
+      'always',
+    ],
   },
 };
