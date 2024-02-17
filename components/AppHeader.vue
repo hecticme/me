@@ -3,11 +3,6 @@ const navLinks = ref([
   'works',
   'about',
 ])
-
-const router = useRouter()
-const currentRouteName = computed(
-  () => router.currentRoute.value.name
-)
 </script>
 
 <template>
@@ -27,13 +22,7 @@ const currentRouteName = computed(
           v-for="(link, index) in navLinks"
           :key="index"
         >
-          <NuxtLink
-            class="link nav-links__link"
-            :class="{ active: currentRouteName === link }"
-            :to="`/${link}`"
-          >
-            {{ link }}
-          </NuxtLink>
+          <HeaderNavLink :href="link" />
         </li>
       </ul>
     </nav>
@@ -60,33 +49,5 @@ const currentRouteName = computed(
   align-items: center;
   gap: 1.5rem;
   list-style-type: none;
-  font-weight: 600;
-}
-
-.nav-links__link {
-  position: relative;
-  font-size: var(--font-14);
-  text-transform: uppercase;
-  padding-inline: 0.75rem;
-  padding-block: 0.5rem;
-  transition-property: color, background-color;
-  transition-duration: 150ms;
-  transition-timing-function: var(--cubic-bezier);
-}
-
-.nav-links__link::after {
-  content: '';
-  position: absolute;
-  top: 85%;
-  inset-inline: 10%;
-  height: 2px;
-  background-color: black;
-  transition-property: inset-inline;
-  transition-duration: 150ms;
-  transition-timing-function: var(--cubic-bezier);
-}
-
-.nav-links__link:is(:hover, :focus)::after {
-  inset-inline: 25%;
 }
 </style>
