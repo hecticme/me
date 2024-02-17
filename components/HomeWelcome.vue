@@ -22,7 +22,7 @@
 }
 
 .welcome-message__say-hi {
-  font-family: var(--header-font);
+  font-family: var(--font-header);
   font-size: 4rem;
   font-weight: 700;
   text-align: center;

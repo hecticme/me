@@ -39,7 +39,7 @@ const navLinks = ref([
 }
 
 .header__title {
-  font-family: var(--header-font);
+  font-family: var(--font-header);
   font-size: var(--font-18);
   font-weight: 500;
 }
