@@ -3,7 +3,7 @@
 @import './_reset';
 
 body {
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-family: var(--font-text), Arial, Helvetica, sans-serif;
 }
 
 .link {
