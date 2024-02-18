@@ -4,9 +4,6 @@ import { computed } from 'vue'
 // Import components.
 import { Icon } from '@iconify/vue'
 
-// Import stores.
-import { useThemeStore } from '@/stores/theme'
-
 const iconThemeName = computed(() => theme.isDarkTheme
   ? 'material-symbols:dark-mode-outline-rounded'
   : 'material-symbols:sunny-outline-rounded'
