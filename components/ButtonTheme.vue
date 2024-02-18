@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from 'vue'
 
-// Import components.
+// Import components
 import { Icon } from '@iconify/vue'
 
 const iconThemeName = computed(() => theme.isDarkTheme
