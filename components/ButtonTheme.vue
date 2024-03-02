@@ -18,8 +18,8 @@ const theme = useThemeStore()
     @click="theme.toggleDarkTheme"
   >
     <Icon
-      :icon="iconThemeName"
       class="icon-theme"
+      :icon="iconThemeName"
     />
   </button>
 </template>
