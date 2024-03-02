@@ -10,13 +10,13 @@ const currentRouteName = computed(
 </script>
 
 <template>
-<NuxtLink
-  class="link link-nav"
-  :class="{ active: currentRouteName === href }"
-  :to="`/${href}`"
->
-  {{ href }}
-</NuxtLink>
+  <NuxtLink
+    class="link link-nav"
+    :class="{ active: currentRouteName === href }"
+    :to="`/${href}`"
+  >
+    {{ href }}
+  </NuxtLink>
 </template>
 
 <style scoped>
