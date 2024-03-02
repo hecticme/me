@@ -104,6 +104,12 @@ module.exports = {
       'error',
       'always',
     ],
+    'vue/attributes-order': [
+      'error',
+      {
+        alphabetical: true,
+      },
+    ],
     'vue/component-tags-order': [
       'error',
       {
