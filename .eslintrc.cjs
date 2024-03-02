@@ -118,5 +118,9 @@ module.exports = {
       'error',
       2,
     ],
+    'vue/padding-line-between-blocks': [
+      'error',
+      'always',
+    ],
   },
 }
