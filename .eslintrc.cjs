@@ -120,6 +120,18 @@ module.exports = {
         ],
       },
     ],
+    'vue/define-macros-order': [
+      'error',
+      {
+        order: [
+          'defineOptions',
+          'defineModel',
+          'defineProps',
+          'defineEmits',
+          'defineSlots',
+        ],
+      },
+    ],
     'vue/html-indent': [
       'error',
       2,
