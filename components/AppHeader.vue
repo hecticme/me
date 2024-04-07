@@ -6,18 +6,15 @@ const navLinks = ref([
 </script>
 
 <template>
-  <header class="header">
-    <div class="header__title">
-      <NuxtLink
-        class="link"
-        to="/"
-      >
+  <header>
+    <div>
+      <NuxtLink to="/">
         hecticme.
       </NuxtLink>
     </div>
 
-    <nav class="header__nav-container">
-      <ul class="nav-container__nav-links">
+    <nav>
+      <ul>
         <li
           v-for="(link, index) in navLinks"
           :key="index"
@@ -28,26 +25,3 @@ const navLinks = ref([
     </nav>
   </header>
 </template>
-
-<style scoped>
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 2rem;
-  padding-block: 1rem;
-}
-
-.header__title {
-  font-family: var(--font-header);
-  font-size: var(--font-18);
-  font-weight: 500;
-}
-
-.nav-container__nav-links {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  list-style-type: none;
-}
-</style>
