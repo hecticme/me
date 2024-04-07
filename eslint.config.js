@@ -9,6 +9,11 @@ const GLOB_VUE = '**/*.vue'
 
 export default tsEslint.config(
   {
+    ignores: [
+      '.nuxt/*',
+    ],
+  },
+  {
     files: [
       GLOB_JS,
       GLOB_TS,
