@@ -22,7 +22,9 @@ const navLinks = ref([
           v-for="(link, index) in navLinks"
           :key="index"
         >
-          <HeaderNavLink :href="link" />
+          <NuxtLink :to="link">
+            {{ link }}
+          </NuxtLink>
         </li>
       </ul>
     </nav>
