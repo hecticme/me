@@ -5,7 +5,7 @@ defineProps<{
 
 const router = useRouter()
 const currentRouteName = computed(
-  () => router.currentRoute.value.name
+  () => router.currentRoute.value.name,
 )
 </script>
 
