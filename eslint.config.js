@@ -68,6 +68,9 @@ export default tsEslint.config(
         'error',
         2,
       ],
+      'vue/multi-word-component-names': [
+        'off',
+      ],
     },
   },
 )
