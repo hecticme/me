@@ -6,7 +6,7 @@ useHead({
 </script>
 
 <template>
-  <AppHeader />
+  <TheHeader />
 
   <NuxtPage />
 </template>
