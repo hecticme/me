@@ -8,5 +8,7 @@ useHead({
 <template>
   <TheHeader />
 
-  <NuxtPage />
+  <main class="py-10">
+    <NuxtPage />
+  </main>
 </template>
