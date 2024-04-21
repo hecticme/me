@@ -6,7 +6,7 @@ const navLinks = ref([
 </script>
 
 <template>
-  <header class="sticky bg-white shadow-outline flex justify-between top-5 mx-auto px-8 py-3 max-w-lg rounded-full">
+  <header class="sticky bg-white flex justify-between items-center top-0 px-8 py-1 border-b border-neutral-900 h-header-full">
     <div>
       <NuxtLink
         class="font-semibold"
