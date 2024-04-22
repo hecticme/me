@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   modules: [
     '@pinia/nuxt',
     '@nuxt/fonts',
+    'nuxt-icon',
   ],
   postcss: {
     plugins: {
