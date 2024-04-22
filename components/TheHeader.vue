@@ -3,6 +3,17 @@ const navLinks = ref([
   'works',
   'about',
 ])
+
+const socialLinks = ref([
+  {
+    href: 'https://github.com/hecticme',
+    icon: 'mingcute:github-line',
+  },
+  {
+    href: 'https://twitter.com/ngminh_me',
+    icon: 'mingcute:twitter-line',
+  },
+])
 </script>
 
 <template>
@@ -28,5 +39,21 @@ const navLinks = ref([
         </li>
       </ul>
     </nav>
+
+    <ul class="flex gap-3 items-center">
+      <li
+        v-for="(link, index) of socialLinks"
+        :key="index"
+      >
+        <NuxtLink
+          class="rounded-full flex justify-center items-center aspect-square p-2 transition-colors duration-300 hover:bg-neutral-200"
+          :to="link.href"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon :name="link.icon" />
+        </NuxtLink>
+      </li>
+    </ul>
   </header>
 </template>
