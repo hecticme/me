@@ -1,9 +1,6 @@
 <script setup>
 import { computed } from 'vue'
 
-// Import components
-import { Icon } from '@iconify/vue'
-
 const iconThemeName = computed(() => theme.isDarkTheme
   ? 'material-symbols:dark-mode-outline-rounded'
   : 'material-symbols:sunny-outline-rounded',
@@ -17,7 +14,7 @@ const theme = useThemeStore()
     @click="theme.toggleDarkTheme"
   >
     <Icon
-      :icon="iconThemeName"
+      :name="iconThemeName"
     />
   </button>
 </template>
