@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const navLinks = ref([
-  'works',
+  'work',
   'about',
 ])
 

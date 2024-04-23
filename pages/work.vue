@@ -1,9 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Works',
+  title: 'Work',
 })
 </script>
 
 <template>
-  <h1>Works page</h1>
+  <h1>Work page</h1>
 </template>
