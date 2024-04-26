@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-7xl mx-auto">
+  <section class="body-container">
     <h1 class="font-serif font-bold text-4xl">
       hecticme
     </h1>
