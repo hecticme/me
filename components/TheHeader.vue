@@ -33,7 +33,14 @@ const socialLinks = ref([
           v-for="(link, index) in navLinks"
           :key="index"
         >
-          <NuxtLink :to="link">
+          <NuxtLink
+            :to="link"
+            :class="[
+              'relative flex justify-center text-gray-400 transition-colors duration-300',
+              'after:absolute after:top-[110%] after:w-[5px] after:h-[5px] after:rounded-full after:bg-gray-900 after:scale-0 after:transition-transform after:duration-300',
+            ]"
+            active-class="text-gray-900 after:scale-100"
+          >
             {{ link }}
           </NuxtLink>
         </li>
