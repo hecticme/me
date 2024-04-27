@@ -11,6 +11,7 @@
     "lint": "eslint ."
   },
   "devDependencies": {
+    "@hecticme/eslint-config": "^0.0.0",
     "@nuxt/devtools": "^1.1.5",
     "@nuxt/fonts": "^0.6.1",
     "autoprefixer": "^10.4.19",
