@@ -8,7 +8,7 @@ useHead({
 <template>
   <div
     id="app"
-    class="min-h-screen flex flex-col"
+    class="min-h-screen flex flex-col bg-white text-gray-900"
   >
     <TheHeader />
 
