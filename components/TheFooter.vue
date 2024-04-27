@@ -13,10 +13,10 @@ const copyright = computed(() => {
       </span>
 
       <NuxtLink
-        to="https://creativecommons.org/licenses/by-sa/4.0/"
-        target="_blank"
-        rel="noopener noreferrer"
         class="font-medium underline underline-offset-2 hover:text-gray-500 transition-colors duration-300"
+        rel="noopener noreferrer"
+        target="_blank"
+        to="https://creativecommons.org/licenses/by-sa/4.0/"
       >
         CC BY-SA 4.0
       </NuxtLink>

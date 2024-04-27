@@ -34,12 +34,12 @@ const socialLinks = ref([
           :key="index"
         >
           <NuxtLink
-            :to="link"
+            active-class="text-gray-900 after:scale-100"
             :class="[
               'relative flex justify-center text-gray-400 transition-colors duration-300',
               'after:absolute after:top-[110%] after:w-[5px] after:h-[5px] after:rounded-full after:bg-gray-900 after:scale-0 after:transition-transform after:duration-300',
             ]"
-            active-class="text-gray-900 after:scale-100"
+            :to="link"
           >
             {{ link }}
           </NuxtLink>
@@ -54,9 +54,9 @@ const socialLinks = ref([
       >
         <NuxtLink
           class="rounded-full flex justify-center items-center aspect-square p-2 transition-colors duration-300 hover:bg-gray-200"
-          :to="link.href"
-          target="_blank"
           rel="noopener noreferrer"
+          target="_blank"
+          :to="link.href"
         >
           <Icon :name="link.icon" />
         </NuxtLink>

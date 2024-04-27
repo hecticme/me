@@ -18,14 +18,14 @@ const contracts = [
     <NuxtLink
       v-for="(contract ,index) of contracts"
       :key="index"
-      :to="contract.href"
-      target="_blank"
-      rel="noopener noreferrer"
       class="font-medium underline underline-offset-2 flex items-center gap-1 p-1 bg-white hover:bg-gray-200 rounded transition-colors duration-300"
+      rel="noopener noreferrer"
+      target="_blank"
+      :to="contract.href"
     >
       <Icon
-        :name="contract.iconName"
         class="flex w-4 h-4"
+        :name="contract.iconName"
       />
 
       <span>
