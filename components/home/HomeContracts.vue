@@ -21,7 +21,7 @@ const contracts = [
       :to="contract.href"
       target="_blank"
       rel="noopener noreferrer"
-      class="font-medium underline underline-offset-2 flex items-center gap-1 p-1 bg-white hover:bg-gray-200 rounded transition-colors duration-500"
+      class="font-medium underline underline-offset-2 flex items-center gap-1 p-1 bg-white hover:bg-gray-200 rounded transition-colors duration-300"
     >
       <Icon
         :name="contract.iconName"
