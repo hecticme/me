@@ -19,7 +19,7 @@ const contracts = [
       v-for="(contract ,index) of contracts"
       :key="index"
       :to="contract.href"
-      class="flex items-center gap-1 p-1 bg-white hover:bg-gray-200 rounded transition-colors duration-500"
+      class="font-medium underline underline-offset-2 flex items-center gap-1 p-1 bg-white hover:bg-gray-200 rounded transition-colors duration-500"
     >
       <Icon
         :name="contract.iconName"
