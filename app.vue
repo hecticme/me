@@ -6,9 +6,16 @@ useHead({
 </script>
 
 <template>
-  <TheHeader />
+  <div
+    id="app"
+    class="min-h-screen flex flex-col"
+  >
+    <TheHeader />
 
-  <main class="py-10">
-    <NuxtPage />
-  </main>
+    <main class="py-10 flex-grow">
+      <NuxtPage />
+    </main>
+  </div>
+
+  <div id="teleports" />
 </template>
