@@ -15,6 +15,8 @@ useHead({
     <main class="py-10 flex-grow">
       <NuxtPage />
     </main>
+
+    <TheFooter />
   </div>
 
   <div id="teleports" />
