@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+@layer utilities {
   .body-container {
     max-width: theme(maxWidth.7xl);
     margin-inline: auto;
