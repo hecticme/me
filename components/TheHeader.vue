@@ -48,7 +48,7 @@ const socialLinks = ref([
         </ul>
       </nav>
 
-      <ul class="flex gap-3 items-center">
+      <ul class="flex gap-2 items-center">
         <li
           v-for="(link, index) of socialLinks"
           :key="index"
