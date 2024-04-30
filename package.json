@@ -14,6 +14,7 @@
     "@hecticme/eslint-config": "^0.0.0",
     "@nuxt/devtools": "^1.1.5",
     "@nuxt/fonts": "^0.6.1",
+    "@nuxtjs/color-mode": "^3.4.1",
     "autoprefixer": "^10.4.19",
     "eslint": "^9.0.0",
     "nuxt": "^3.11.2",
