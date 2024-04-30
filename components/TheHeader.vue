@@ -1,7 +1,17 @@
 <script setup lang="ts">
 const navLinks = ref([
-  'work',
-  'about',
+  {
+    href: '/',
+    label: 'home',
+  },
+  {
+    href: '/work',
+    label: 'work',
+  },
+  {
+    href: '/about',
+    label: 'about',
+  },
 ])
 
 const socialLinks = ref([
@@ -31,7 +41,7 @@ const socialLinks = ref([
       <nav>
         <ul class="flex gap-8 uppercase">
           <li
-            v-for="(link, index) in navLinks"
+            v-for="(link, index) of navLinks"
             :key="index"
           >
             <NuxtLink
@@ -40,9 +50,9 @@ const socialLinks = ref([
                 'relative flex justify-center text-gray-400 hover:text-gray-700 transition-colors duration-300',
                 'after:absolute after:top-[110%] after:w-[5px] after:h-[5px] after:rounded-full after:bg-gray-900 after:scale-0 after:transition-transform after:duration-300',
               ]"
-              :to="link"
+              :to="link.href"
             >
-              {{ link }}
+              {{ link.label }}
             </NuxtLink>
           </li>
         </ul>
