@@ -27,6 +27,7 @@ const socialLinks = ref([
           me.
         </NuxtLink>
       </div>
+
       <nav>
         <ul class="flex gap-8 uppercase">
           <li
@@ -46,6 +47,7 @@ const socialLinks = ref([
           </li>
         </ul>
       </nav>
+
       <ul class="flex gap-3 items-center">
         <li
           v-for="(link, index) of socialLinks"
