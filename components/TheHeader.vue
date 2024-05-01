@@ -17,7 +17,7 @@ const socialLinks = ref([
 </script>
 
 <template>
-  <header class="sticky bg-white top-0 border-b border-gray-900">
+  <header class="sticky bg-white top-0 border-b border-gray-900 dark:bg-gray-900 dark:border-gray-700">
     <div class="flex justify-between items-center h-header-full body-container">
       <div>
         <NuxtLink
@@ -35,10 +35,10 @@ const socialLinks = ref([
             :key="index"
           >
             <NuxtLink
-              active-class="text-gray-900 after:scale-100"
+              active-class="text-gray-900 after:scale-100 dark:text-white"
               :class="[
-                'relative flex justify-center text-gray-400 hover:text-gray-700 transition-colors duration-300',
-                'after:absolute after:top-[110%] after:w-[5px] after:h-[5px] after:rounded-full after:bg-gray-900 after:scale-0 after:transition-transform after:duration-300',
+                'relative flex justify-center text-gray-400 hover:text-gray-700 transition-colors duration-300 dark:hover:text-gray-200',
+                'after:absolute after:top-[110%] after:w-[5px] after:h-[5px] after:rounded-full after:bg-gray-900 after:scale-0 after:transition-transform after:duration-300 dark:after:bg-white',
               ]"
               :to="link"
             >
@@ -54,7 +54,7 @@ const socialLinks = ref([
           :key="index"
         >
           <NuxtLink
-            class="rounded-full flex justify-center items-center aspect-square p-2 transition-colors duration-300 hover:bg-gray-200"
+            class="rounded-full flex justify-center items-center aspect-square p-2 transition-colors duration-300 hover:bg-gray-200 dark:hover:bg-gray-700"
             rel="noopener noreferrer"
             target="_blank"
             :to="link.href"
