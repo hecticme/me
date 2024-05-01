@@ -62,6 +62,10 @@ const socialLinks = ref([
             <Icon :name="link.icon" />
           </NuxtLink>
         </li>
+
+        <li>
+          <ColorModeToggler />
+        </li>
       </ul>
     </div>
   </header>
