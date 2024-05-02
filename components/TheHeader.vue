@@ -17,7 +17,7 @@ const socialLinks = ref([
 </script>
 
 <template>
-  <header class="sticky bg-white top-0 border-b border-gray-900 dark:bg-gray-900 dark:border-gray-700">
+  <header class="sticky bg-inherit top-0 border-b border-gray-900 dark:border-gray-700">
     <div class="flex justify-between items-center h-header-full body-container">
       <div>
         <NuxtLink
