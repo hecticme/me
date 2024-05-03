@@ -17,11 +17,11 @@ const socialLinks = ref([
 </script>
 
 <template>
-  <header class="sticky bg-inherit top-0 border-b border-gray-900 dark:border-gray-700">
+  <header class="sticky bg-white dark:bg-gray-900 top-0 border-b border-gray-900 dark:border-gray-700 transition-colors duration-300">
     <div class="flex justify-between items-center h-header-full body-container">
       <div>
         <NuxtLink
-          class="font-semibold"
+          class="font-semibold text-gray-900 dark:text-white transition-colors duration-300"
           to="/"
         >
           me.
@@ -54,7 +54,7 @@ const socialLinks = ref([
           :key="index"
         >
           <NuxtLink
-            class="rounded-full flex justify-center items-center aspect-square p-2 transition-colors duration-300 hover:bg-gray-200 dark:hover:bg-gray-700"
+            class="text-gray-900 rounded-full flex justify-center items-center aspect-square p-2 transition-colors duration-300 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700"
             rel="noopener noreferrer"
             target="_blank"
             :to="link.href"
