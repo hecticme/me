@@ -23,7 +23,7 @@
     <div class="flex flex-col gap-1 mt-10">
       <p>Connect with me through:</p>
 
-      <HomeContracts />
+      <MyContacts />
     </div>
   </section>
 </template>
