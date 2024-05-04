@@ -10,6 +10,11 @@ const contracts = [
     platformName: 'Twitter',
     iconName: 'ri:twitter-x-fill',
   },
+  {
+    href: 'https://www.linkedin.com/in/ngminhha/',
+    platformName: 'LinkedIn',
+    iconName: 'ri:linkedin-fill',
+  },
 ]
 </script>
 
