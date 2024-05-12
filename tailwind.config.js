@@ -12,6 +12,12 @@ export default {
   ],
   darkMode: 'selector',
   theme: {
+    transitionDuration: {
+      ...defaultTheme.transitionDuration,
+      DEFAULT: '300ms',
+    },
+
+    // Extend base theme.
     extend: {
       fontFamily: {
         sans: ['Space Grotesk', ...defaultTheme.fontFamily.sans],
