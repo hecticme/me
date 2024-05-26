@@ -19,7 +19,7 @@ const contracts = [
 </script>
 
 <template>
-  <div class="flex gap-2">
+  <div class="flex flex-col gap-1 w-fit">
     <NuxtLink
       v-for="(contract ,index) of contracts"
       :key="index"
