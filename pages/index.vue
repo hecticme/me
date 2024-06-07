@@ -1,5 +1,3 @@
 <template>
   <HomeWelcome />
-
-  <HomeProjects />
 </template>
