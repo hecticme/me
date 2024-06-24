@@ -7,7 +7,7 @@ useSeoMeta({
 <template>
   <section class="body-container flex gap-10">
     <div class="flex-1">
-      <h2 class="font-semibold text-lg">
+      <h2 class="font-semibold text-xl tracking-tight">
         About me
       </h2>
 
@@ -20,7 +20,7 @@ useSeoMeta({
   </section>
 
   <section class="mt-20 body-container">
-    <h2 class="font-semibold text-lg">
+    <h2 class="font-semibold text-xl tracking-tight">
       Work experience
     </h2>
 
