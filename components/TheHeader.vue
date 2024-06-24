@@ -20,12 +20,7 @@ const socialLinks = ref([
   <header class="sticky bg-white dark:bg-gray-900 top-0 border-b border-gray-300 dark:border-gray-700 transition-colors">
     <div class="flex justify-between items-center h-header-full body-container">
       <div>
-        <NuxtLink
-          class="font-semibold text-gray-900 dark:text-white transition-colors"
-          to="/"
-        >
-          me.
-        </NuxtLink>
+        <TheLogo />
       </div>
 
       <nav>
