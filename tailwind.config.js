@@ -23,10 +23,6 @@ export default {
         sans: ['Space Grotesk', ...defaultTheme.fontFamily.sans],
         serif: ['Playfair Display', ...defaultTheme.fontFamily.serif],
       },
-      spacing: {
-        'header-full': '5rem',
-        'header-less': '4rem',
-      },
     },
   },
   plugins: [],
