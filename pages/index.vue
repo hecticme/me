@@ -25,5 +25,11 @@
 
       <MyContacts />
     </div>
+
+    <div class="mt-10 flex gap-1">
+      <p>Or send me an email:</p>
+
+      <MyEmail />
+    </div>
   </section>
 </template>
