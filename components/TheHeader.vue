@@ -33,7 +33,7 @@ const socialLinks = ref([
               active-class="text-gray-900 after:scale-100 dark:text-white"
               :class="[
                 'relative flex justify-center text-gray-400 hover:text-gray-700 transition-colors dark:hover:text-gray-200',
-                'after:absolute after:top-[110%] after:w-[5px] after:h-[5px] after:rounded-full after:bg-gray-900 after:scale-0 after:transition-transform after: dark:after:bg-white',
+                'after:absolute after:top-[98%] after:w-[5px] after:h-[5px] after:rounded-full after:bg-gray-900 after:scale-0 after:transition-transform after: dark:after:bg-white',
               ]"
               :to="link"
             >
