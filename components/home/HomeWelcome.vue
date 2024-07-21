@@ -1,22 +1,22 @@
 <template>
   <section class="body-container">
     <h1 class="font-serif font-bold text-4xl">
-      hecticme
+      Hi 👋! I'm Ngọc Minh.
     </h1>
 
     <p class="mt-6">
-      Hi 👋! I'm Ngọc Minh. A person with a lot of problems.
+      I keep trying until things make sense.
     </p>
 
     <div class="flex flex-col gap-4 mt-10">
       <p>
         Having challenged myself with illustration and design in the past, <br>
-        I'm also considered a designer with an obsession with details.
+        I also consider myself a designer with an obsession with details.
       </p>
 
       <p>
-        Outside of programming, I enjoy travelling and playing RPG video games. <br>
-        None of that for now though, at least that's what I'm striving to do.
+        Outside of programming, I enjoy playing RPG video games, mostly offline. <br>
+        Immersing myself in adventures helps keeping me sane after work.
       </p>
     </div>
 
