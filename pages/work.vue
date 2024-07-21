@@ -5,5 +5,13 @@ useSeoMeta({
 </script>
 
 <template>
-  <h1>Work page</h1>
+  <div class="body-container">
+    <h2 class="font-semibold text-xl tracking-tight">
+      I have built a few things.
+    </h2>
+
+    <p class="mt-6 max-w-xl">
+      Making stuff is a great learning method 🧙.
+    </p>
+  </div>
 </template>
