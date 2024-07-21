@@ -5,7 +5,7 @@
 <template>
   <NuxtLink
     :class="[
-      'flex font-semibold transition-colors text-gray-400 hover:text-gray-700',
+      'flex font-medium transition-colors text-gray-400 hover:text-gray-700',
       {
         'text-gray-900 dark:text-white': $route.name === 'index',
       }
