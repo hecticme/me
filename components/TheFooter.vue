@@ -6,7 +6,7 @@ const copyright = computed(() => {
 </script>
 
 <template>
-  <footer class="bg-gray-50 dark:bg-gray-950 flex justify-center py-4 transition-colors">
+  <footer class="bg-gray-50 dark:bg-gray-950 border-t border-gray-300 dark:border-gray-700 flex justify-center py-4 transition-colors">
     <p class="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
       <span class="transition-colors">
         {{ copyright }}
