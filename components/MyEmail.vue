@@ -30,7 +30,7 @@ function handleCopy () {
     <Transition>
       <div
         v-if="shouldShowCopyIndicator"
-        class="absolute bottom-[115%] flex justify-center items-center text-xs font-medium px-2 py-1 rounded bg-gray-100 border border-gray-300"
+        class="absolute bottom-[115%] flex justify-center items-center text-xs font-medium px-2 py-1 rounded bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 transition-colors"
       >
         <p>Copied!</p>
       </div>
