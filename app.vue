@@ -19,7 +19,7 @@ useHead({
   >
     <TheHeader />
 
-    <main class="py-10 flex-grow">
+    <main class="py-14 flex-grow">
       <NuxtPage />
     </main>
 
