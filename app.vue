@@ -28,3 +28,16 @@ useHead({
 
   <div id="teleports" />
 </template>
+
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-enter-from,
+.page-leave-to {
+  transform: translateY(6px);
+  opacity: 0;
+}
+</style>
