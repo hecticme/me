@@ -23,7 +23,7 @@ const socialLinks = ref([
         <TheLogo />
       </div>
 
-      <nav>
+      <nav class="hidden md:block">
         <ul class="flex gap-8 uppercase">
           <li
             v-for="(link, index) in navLinks"
@@ -43,7 +43,7 @@ const socialLinks = ref([
         </ul>
       </nav>
 
-      <ul class="flex gap-1 items-center">
+      <ul class="hidden md:flex gap-1 items-center">
         <li
           v-for="(link, index) of socialLinks"
           :key="index"
