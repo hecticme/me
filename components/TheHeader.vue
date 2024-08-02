@@ -62,6 +62,76 @@ const socialLinks = ref([
           <ColorModeToggler />
         </li>
       </ul>
+
+      <button
+        class="flex md:hidden p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
+      >
+        <Icon name="solar:hamburger-menu-line-duotone" />
+      </button>
+
+      <Teleport to="body">
+        <Transition>
+          <div
+            v-if="shouldShowSidebar"
+            class="fixed inset-0 z-10 bg-gray-50 dark:bg-gray-950 flex flex-col justify-center items-center gap-10 transition-colors text-gray-900 dark:text-white"
+          >
+            <button
+              class="absolute top-6 right-6 flex p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
+            >
+              <Icon name="mingcute:close-fill" />
+            </button>
+
+            <nav>
+              <ul class="flex flex-col items-center gap-6 uppercase">
+                <li
+                  v-for="(link, index) in navLinks"
+                  :key="index"
+                >
+                  <NuxtLink
+                    active-class="text-gray-900 after:scale-100 dark:text-white"
+                    class="text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
+                    :to="link"
+                  >
+                    {{ link }}
+                  </NuxtLink>
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="flex gap-1 items-center">
+              <li
+                v-for="(link, index) of socialLinks"
+                :key="index"
+              >
+                <NuxtLink
+                  class="text-gray-900 rounded-lg flex justify-center items-center aspect-square p-2 transition-colors hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  :to="link.href"
+                >
+                  <Icon :name="link.icon" />
+                </NuxtLink>
+              </li>
+
+              <li>
+                <ColorModeToggler />
+              </li>
+            </ul>
+          </div>
+        </Transition>
+      </Teleport>
     </div>
   </header>
 </template>
+
+<style scoped>
+.v-enter-active,
+.v-leave-active {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.v-enter-from,
+.v-leave-to {
+  transform: translateX(100%);
+}
+</style>
