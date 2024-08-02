@@ -4,17 +4,6 @@ const navLinks = ref([
   'about',
 ])
 
-const socialLinks = ref([
-  {
-    href: 'https://github.com/hecticme',
-    icon: 'mingcute:github-line',
-  },
-  {
-    href: 'https://twitter.com/ngminh_me',
-    icon: 'mingcute:twitter-line',
-  },
-])
-
 const shouldShowSidebar = ref(false)
 
 // Close sidebar even if user goes to the same route.
@@ -51,25 +40,7 @@ router.afterEach(() => {
         </ul>
       </nav>
 
-      <ul class="hidden md:flex gap-1 items-center">
-        <li
-          v-for="(link, index) of socialLinks"
-          :key="index"
-        >
-          <NuxtLink
-            class="text-gray-900 rounded-lg flex justify-center items-center aspect-square p-2 transition-colors hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700"
-            rel="noopener noreferrer"
-            target="_blank"
-            :to="link.href"
-          >
-            <Icon :name="link.icon" />
-          </NuxtLink>
-        </li>
-
-        <li>
-          <ColorModeToggler />
-        </li>
-      </ul>
+      <HeaderSocialLinks should-be-hidden-on-mobile />
 
       <button
         class="flex md:hidden p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
@@ -108,25 +79,7 @@ router.afterEach(() => {
               </ul>
             </nav>
 
-            <ul class="flex gap-1 items-center">
-              <li
-                v-for="(link, index) of socialLinks"
-                :key="index"
-              >
-                <NuxtLink
-                  class="text-gray-900 rounded-lg flex justify-center items-center aspect-square p-2 transition-colors hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  :to="link.href"
-                >
-                  <Icon :name="link.icon" />
-                </NuxtLink>
-              </li>
-
-              <li>
-                <ColorModeToggler />
-              </li>
-            </ul>
+            <HeaderSocialLinks />
           </div>
         </Transition>
       </Teleport>
