@@ -14,6 +14,14 @@ const socialLinks = ref([
     icon: 'mingcute:twitter-line',
   },
 ])
+
+const shouldShowSidebar = ref(false)
+
+// Close sidebar even if user goes to the same route.
+const router = useRouter()
+router.afterEach(() => {
+  shouldShowSidebar.value = false
+})
 </script>
 
 <template>
@@ -65,6 +73,7 @@ const socialLinks = ref([
 
       <button
         class="flex md:hidden p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
+        @click="shouldShowSidebar = true"
       >
         <Icon name="solar:hamburger-menu-line-duotone" />
       </button>
@@ -77,6 +86,7 @@ const socialLinks = ref([
           >
             <button
               class="absolute top-6 right-6 flex p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
+              @click="shouldShowSidebar = false"
             >
               <Icon name="mingcute:close-fill" />
             </button>
