@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
   titleTemplate: (pageTitle) =>
-    pageTitle ? `${pageTitle} - hecticme.` : 'hecticme.',
+    pageTitle ? `${pageTitle} • hecticme.` : 'hecticme.',
   link: [
     {
       rel: 'icon',
