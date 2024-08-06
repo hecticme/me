@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const navLinks = ref([
   'work',
-  'about',
+  'blog',
 ])
 
 const shouldShowSidebar = ref(false)
