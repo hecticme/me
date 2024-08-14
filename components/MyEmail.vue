@@ -5,6 +5,7 @@ const shouldShowCopyIndicator = ref(false)
 let copyIndicatorTimeout: NodeJS.Timeout | number | null = null
 
 function handleCopy () {
+  navigator.clipboard.writeText(myEmail)
   shouldShowCopyIndicator.value = true
 
   if (copyIndicatorTimeout !== null) {
