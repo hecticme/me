@@ -6,6 +6,12 @@ const { data: blogs } = await useAsyncData(
     .find()
     .then(result => result.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()))
 )
+
+const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
+  month: 'long',
+  day: '2-digit',
+  year: 'numeric',
+})
 </script>
 
 <template>
@@ -37,7 +43,7 @@ const { data: blogs } = await useAsyncData(
           </span>
 
           <span class="text-sm text-gray-700 dark:text-gray-200 transition-colors">
-            August 10, 2024
+            {{ formatDate(new Date(blog.date)) }}
           </span>
         </NuxtLink>
       </li>
