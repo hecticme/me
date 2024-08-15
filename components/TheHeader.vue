@@ -1,7 +1,13 @@
 <script setup lang="ts">
 const navLinks = [
-  'work',
-  'blog',
+  {
+    href: '/work',
+    title: 'work',
+  },
+  {
+    href: '/blog',
+    title: 'blog',
+  },
 ]
 
 const shouldShowSidebar = ref(false)
@@ -23,8 +29,8 @@ router.afterEach(() => {
       <nav class="hidden md:block">
         <ul class="flex gap-8 uppercase">
           <li
-            v-for="(link, index) in navLinks"
-            :key="index"
+            v-for="{ href, title } of navLinks"
+            :key="title"
           >
             <NuxtLink
               active-class="text-gray-900 after:scale-100 dark:text-white"
@@ -32,9 +38,9 @@ router.afterEach(() => {
                 'relative flex justify-center text-gray-400 hover:text-gray-700 transition-colors dark:hover:text-gray-200',
                 'after:absolute after:top-[98%] after:w-[5px] after:h-[5px] after:rounded-full after:bg-gray-900 after:scale-0 after:transition-transform after: dark:after:bg-white after:pointer-events-none',
               ]"
-              :to="`/${link}`"
+              :to="href"
             >
-              {{ link }}
+              {{ title }}
             </NuxtLink>
           </li>
         </ul>
