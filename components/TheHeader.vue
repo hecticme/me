@@ -10,6 +10,14 @@ const navLinks = [
   },
 ]
 
+const navLinksSidebar = [
+  {
+    href: '/',
+    title: 'home',
+  },
+  ...navLinks,
+]
+
 const shouldShowSidebar = ref(false)
 
 // Close sidebar even if user goes to the same route.
@@ -71,15 +79,15 @@ router.afterEach(() => {
             <nav>
               <ul class="flex flex-col items-center gap-6 uppercase">
                 <li
-                  v-for="(link, index) in navLinks"
-                  :key="index"
+                  v-for="{ href, title } of navLinksSidebar"
+                  :key="title"
                 >
                   <NuxtLink
                     active-class="text-gray-900 after:scale-100 dark:text-white"
                     class="text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
-                    :to="`/${link}`"
+                    :to="href"
                   >
-                    {{ link }}
+                    {{ title }}
                   </NuxtLink>
                 </li>
               </ul>
