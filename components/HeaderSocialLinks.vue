@@ -8,10 +8,6 @@ const socialLinks = ref([
     href: 'https://github.com/hecticme',
     icon: 'mingcute:github-line',
   },
-  {
-    href: 'https://twitter.com/ngminh_me',
-    icon: 'mingcute:twitter-line',
-  },
 ])
 
 </script>
