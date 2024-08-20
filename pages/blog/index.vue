@@ -33,16 +33,17 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
           class="
             flex items-center gap-4
             w-fit
+            max-w-full
             border-b-2 border-gray-400 hover:border-gray-700 dark:hover:border-gray-200
             transition-colors
           "
           :to="blog._path"
         >
-          <span class="font-semibold">
+          <span class="font-semibold text-ellipsis overflow-hidden whitespace-nowrap">
             {{ blog.title }}
           </span>
 
-          <span class="text-sm text-gray-700 dark:text-gray-200 transition-colors">
+          <span class="text-sm whitespace-nowrap text-gray-700 dark:text-gray-200 transition-colors">
             {{ formatDate(new Date(blog.date)) }}
           </span>
         </NuxtLink>
