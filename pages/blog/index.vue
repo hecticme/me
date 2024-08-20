@@ -8,7 +8,7 @@ const { data: blogs } = await useAsyncData(
 )
 
 const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
-  month: 'long',
+  month: 'short',
   day: '2-digit',
   year: 'numeric',
 })
