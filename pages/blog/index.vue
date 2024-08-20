@@ -37,6 +37,7 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
             border-b-2 border-gray-400 hover:border-gray-700 dark:hover:border-gray-200
             transition-colors
           "
+          :title="blog.title"
           :to="blog._path"
         >
           <span class="font-semibold text-ellipsis overflow-hidden whitespace-nowrap">
