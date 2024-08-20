@@ -16,7 +16,7 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
 
 <template>
   <div class="body-container">
-    <h2 class="font-semibold text-xl tracking-tight">
+    <h2 class="font-semibold text-2xl tracking-tight">
       I write some of my thoughts here.
     </h2>
 
