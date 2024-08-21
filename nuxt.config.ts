@@ -16,7 +16,6 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/main.css'],
   modules: [
-    '@pinia/nuxt',
     '@nuxtjs/color-mode',
     '@nuxt/content',
     '@nuxt/fonts',
