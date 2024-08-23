@@ -18,7 +18,21 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
 <template>
   <div class="body-container">
     <section>
-      <h2 class="font-semibold text-3xl">
+      <NuxtLink
+        class="
+          flex items-center gap-1 hover:gap-2
+          text-sm font-semibold
+          text-gray-500 hover:text-gray-900 dark:hover:text-white
+          transition-all
+        "
+        to="/blog"
+      >
+        <Icon name="solar:arrow-left-line-duotone" />
+
+        See all posts
+      </NuxtLink>
+
+      <h2 class="mt-6 font-semibold text-3xl">
         {{ blogDetails?.title }}
       </h2>
 
