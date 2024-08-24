@@ -3,17 +3,17 @@ const contracts = [
   {
     href: 'https://github.com/hecticme',
     platformName: 'Github',
-    iconName: 'ri:github-fill',
+    iconName: 'ph:github-logo-duotone',
   },
   {
     href: 'https://twitter.com/ngminh_me',
     platformName: 'Twitter',
-    iconName: 'ri:twitter-x-fill',
+    iconName: 'ph:x-logo-duotone',
   },
   {
     href: 'https://www.linkedin.com/in/ngminhha/',
     platformName: 'LinkedIn',
-    iconName: 'ri:linkedin-fill',
+    iconName: 'ph:linkedin-logo-duotone',
   },
 ]
 </script>

@@ -6,7 +6,7 @@ const props = defineProps<{
 const socialLinks = ref([
   {
     href: 'https://github.com/hecticme',
-    icon: 'mingcute:github-line',
+    icon: 'ph:github-logo-duotone',
   },
 ])
 

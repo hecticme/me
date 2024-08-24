@@ -73,7 +73,7 @@ router.afterEach(() => {
               class="absolute top-6 right-6 flex p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
               @click="shouldShowSidebar = false"
             >
-              <Icon name="mingcute:close-fill" />
+              <Icon name="ph:x-bold" />
             </button>
 
             <nav>
