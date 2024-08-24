@@ -2,8 +2,8 @@
 const route = useRoute()
 
 const { data: blogDetails } = await useAsyncData(
-  route.fullPath,
-  () => queryContent(route.fullPath)
+  route.path,
+  () => queryContent(route.path)
     .only(['title', 'date'])
     .findOne()
 )
