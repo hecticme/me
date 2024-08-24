@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/fonts',
     '@nuxt/test-utils/module',
-    'nuxt-icon',
+    '@nuxt/icon',
   ],
   postcss: {
     plugins: {
