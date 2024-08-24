@@ -14,6 +14,8 @@
   },
   "devDependencies": {
     "@hecticme/eslint-config": "^0.0.0",
+    "@iconify-json/ph": "^1.1.14",
+    "@iconify-json/solar": "^1.1.10",
     "@nuxt/content": "^2.13.2",
     "@nuxt/devtools": "^1.3.9",
     "@nuxt/fonts": "^0.6.1",
