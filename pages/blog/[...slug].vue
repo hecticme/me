@@ -49,7 +49,7 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
       </time>
     </section>
 
-    <ContentDoc class="mt-8 leading-relaxed" />
+    <ContentDoc class="mt-8 flex flex-col gap-6 leading-relaxed" />
 
     <NuxtLink
       class="
