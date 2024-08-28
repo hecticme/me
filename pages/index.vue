@@ -4,17 +4,17 @@
       Hi 👋! I'm Ngọc Minh.
     </h1>
 
-    <p class="mt-6 max-w-xl">
+    <p class="mt-6">
       I keep trying until things make sense.
     </p>
 
     <div class="flex flex-col gap-4 mt-10">
-      <p class="max-w-xl">
+      <p>
         Having challenged myself with illustration and design in the past,
         I also consider myself a designer with an obsession with details.
       </p>
 
-      <p class="max-w-xl">
+      <p>
         Outside of programming, I enjoy playing RPG video games, mostly offline.
         Immersing myself in adventures helps keeping me sane after work.
       </p>
