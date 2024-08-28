@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  p {
+    @apply leading-relaxed;
+  }
+}
+
 @layer utilities {
   .body-container {
     max-width: theme(maxWidth.5xl);
