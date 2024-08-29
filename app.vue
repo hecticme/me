@@ -15,7 +15,7 @@ useHead({
 <template>
   <div
     id="app"
-    class="min-h-screen flex flex-col bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors"
+    class="min-h-screen flex flex-col bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors"
   >
     <TheHeader />
 
