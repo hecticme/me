@@ -1,8 +1,6 @@
 <script setup lang="ts">
 const username = 'H. Ngọc Minh'
-const copyright = computed(() => {
-  return `2024-PRESENT © ${username}`
-})
+const copyright = `2024-PRESENT © ${username}`
 </script>
 
 <template>
