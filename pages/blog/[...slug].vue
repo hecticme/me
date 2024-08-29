@@ -49,7 +49,9 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
       </time>
     </section>
 
-    <ContentDoc class="mt-8 flex flex-col gap-6 leading-relaxed" />
+    <article :class="$style.blog">
+      <ContentDoc class="mt-8 flex flex-col gap-6 leading-relaxed" />
+    </article>
 
     <NuxtLink
       class="
@@ -65,3 +67,21 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
     </NuxtLink>
   </div>
 </template>
+
+<style module>
+.blog {
+  a {
+    @apply font-medium text-gray-900 underline underline-offset-4 decoration-gray-500 hover:decoration-gray-900 transition-colors;
+  }
+
+  blockquote {
+    @apply border-l-2 border-gray-500 pl-4 py-1;
+  }
+}
+
+:global(.dark) .blog {
+  a {
+    @apply text-white hover:decoration-white;
+  }
+}
+</style>
