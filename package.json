@@ -13,7 +13,7 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "@hecticme/eslint-config": "^0.0.0",
+    "@hecticme/eslint-config": "^0.1.0",
     "@iconify-json/ph": "^1.1.14",
     "@iconify-json/solar": "^1.1.10",
     "@nuxt/content": "^2.13.2",
