@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const colorMode = useColorMode()
 
-function changeColorMode () {
+function changeColorMode() {
   if (colorMode.value === 'dark') {
     colorMode.preference = 'light'
   } else {
