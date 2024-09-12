@@ -63,7 +63,7 @@ router.afterEach(() => {
         <Icon name="solar:hamburger-menu-line-duotone" />
       </button>
 
-      <Teleport to="body">
+      <Teleport to="#teleports">
         <Transition>
           <div
             v-if="shouldShowSidebar"
