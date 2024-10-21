@@ -25,8 +25,6 @@ useHead({
 
     <TheFooter />
   </div>
-
-  <div id="teleports" />
 </template>
 
 <style>
