@@ -20,16 +20,14 @@
       </p>
     </div>
 
-    <div class="flex flex-col gap-1 mt-10">
-      <p>Connect with me through:</p>
-
+    <div class="flex flex-col gap-2 mt-12">
       <MyContacts />
-    </div>
 
-    <div class="mt-10 flex gap-1">
-      <p>Or send me an email:</p>
+      <div class="flex gap-1">
+        <p>Or send me an email:</p>
 
-      <MyEmail />
+        <MyEmail />
+      </div>
     </div>
   </section>
 </template>
