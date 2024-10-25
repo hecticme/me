@@ -24,7 +24,7 @@ const socialLinks = ref([
       :key="index"
     >
       <NuxtLink
-        class="text-zinc-900 rounded-lg flex justify-center items-center aspect-square p-2 transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-700"
+        class="text-zinc-500 hover:text-zinc-900 dark:hover:text-white flex justify-center items-center aspect-square p-2 transition-colors"
         rel="noopener noreferrer"
         target="_blank"
         :to="link.href"
