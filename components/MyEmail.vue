@@ -20,23 +20,41 @@ function handleCopy() {
 </script>
 
 <template>
-  <div class="relative flex justify-center">
-    <button
-      class="underline underline-offset-2 decoration-zinc-700"
-      @click="handleCopy"
-    >
-      {{ myEmail }}
-    </button>
-
-    <Transition>
-      <div
-        v-if="shouldShowCopyIndicator"
-        class="absolute bottom-[115%] flex justify-center items-center text-xs font-medium px-2 py-1 rounded bg-zinc-100 dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 transition-colors"
+  <p class="">
+    <span>
+      Or send me
+      <button
+        class="
+          relative
+          inline-flex justify-center
+          underline underline-offset-2
+          decoration-zinc-500 hover:decoration-zinc-900 dark:hover:decoration-white
+          transition-colors
+        "
+        @click="handleCopy"
       >
-        <p>Copied!</p>
-      </div>
-    </Transition>
-  </div>
+        an email
+
+        <Transition>
+          <span
+            v-if="shouldShowCopyIndicator"
+            class="
+              absolute left-[115%]
+              inline-flex justify-center items-center
+              text-xs font-medium
+              px-2 py-1
+              rounded
+              bg-zinc-100 dark:bg-zinc-800
+              border border-zinc-300 dark:border-zinc-700
+              transition-colors
+            "
+          >
+            Copied!
+          </span>
+        </Transition>
+      </button>
+    </span>
+  </p>
 </template>
 
 <style scoped>
