@@ -23,11 +23,7 @@
     <div class="flex flex-col gap-2 mt-12">
       <MyContacts />
 
-      <div class="flex gap-1">
-        <p>Or send me an email:</p>
-
-        <MyEmail />
-      </div>
+      <MyEmail />
     </div>
   </section>
 </template>
