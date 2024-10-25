@@ -19,17 +19,17 @@ const contracts = [
 </script>
 
 <template>
-  <div class="flex flex-col gap-1 w-fit">
+  <div class="flex flex-wrap gap-2">
     <NuxtLink
       v-for="(contract, index) of contracts"
       :key="index"
-      class="font-medium underline underline-offset-2 flex items-center gap-1 p-1 text-zinc-900 bg-transparent hover:bg-zinc-200 rounded transition-colors dark:text-white dark:hover:bg-zinc-700"
+      class="flex items-center gap-1 text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors"
       rel="noopener noreferrer"
       target="_blank"
       :to="contract.href"
     >
       <Icon
-        class="flex w-4 h-4"
+        class="flex w-5 h-5"
         :name="contract.iconName"
       />
 
