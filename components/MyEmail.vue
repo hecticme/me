@@ -26,7 +26,7 @@ function handleCopy() {
       w-fit
       inline-flex justify-center
       underline underline-offset-2
-      decoration-zinc-500 hover:decoration-zinc-900 dark:hover:decoration-white
+      text-zinc-500 hover:text-zinc-900 dark:hover:text-white
       transition-colors
     "
     @click="handleCopy"
