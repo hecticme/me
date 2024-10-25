@@ -10,7 +10,7 @@
 
 @layer utilities {
   .body-container {
-    max-width: theme(maxWidth.5xl);
+    max-width: theme(maxWidth.4xl);
     margin-inline: auto;
     padding-inline: 1.5rem;
   }
