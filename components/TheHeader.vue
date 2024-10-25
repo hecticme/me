@@ -41,11 +41,8 @@ router.afterEach(() => {
             :key="title"
           >
             <NuxtLink
-              active-class="text-zinc-900 after:scale-100 dark:text-white"
-              :class="[
-                'relative flex justify-center text-zinc-400 hover:text-zinc-700 transition-colors dark:hover:text-zinc-200',
-                'after:absolute after:top-[98%] after:w-[5px] after:h-[5px] after:rounded-full after:bg-zinc-900 after:scale-0 after:transition-transform after: dark:after:bg-white after:pointer-events-none',
-              ]"
+              active-class="text-zinc-900 dark:text-white"
+              class="text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors "
               :to="href"
             >
               {{ title }}
