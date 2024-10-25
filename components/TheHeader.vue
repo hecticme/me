@@ -67,7 +67,7 @@ router.afterEach(() => {
             class="fixed inset-0 z-10 bg-zinc-50 dark:bg-zinc-950 flex flex-col justify-center items-center gap-10 transition-colors text-zinc-900 dark:text-white"
           >
             <button
-              class="absolute top-6 right-6 flex p-2 rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors"
+              class="absolute top-6 right-6 flex p-2 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors"
               @click="shouldShowSidebar = false"
             >
               <Icon name="ph:x-bold" />
