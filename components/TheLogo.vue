@@ -4,9 +4,9 @@
 
 <template>
   <NuxtLink
-    active-class="text-gray-900 dark:text-white"
+    active-class="text-zinc-900 dark:text-white"
     :class="[
-      'flex font-medium transition-colors text-gray-400 hover:text-gray-700 dark:hover:text-gray-200',
+      'flex font-medium transition-colors text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200',
     ]"
     to="/"
   >

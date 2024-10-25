@@ -23,7 +23,7 @@ const contracts = [
     <NuxtLink
       v-for="(contract ,index) of contracts"
       :key="index"
-      class="font-medium underline underline-offset-2 flex items-center gap-1 p-1 text-gray-900 bg-transparent hover:bg-gray-200 rounded transition-colors dark:text-white dark:hover:bg-gray-700"
+      class="font-medium underline underline-offset-2 flex items-center gap-1 p-1 text-zinc-900 bg-transparent hover:bg-zinc-200 rounded transition-colors dark:text-white dark:hover:bg-zinc-700"
       rel="noopener noreferrer"
       target="_blank"
       :to="contract.href"

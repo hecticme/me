@@ -12,7 +12,7 @@ function changeColorMode() {
 
 <template>
   <button
-    class="text-gray-900 bg-transparent hover:bg-gray-200 p-2 rounded-lg transition-colors dark:text-white dark:hover:bg-gray-700"
+    class="text-zinc-900 bg-transparent hover:bg-zinc-200 p-2 rounded-lg transition-colors dark:text-white dark:hover:bg-zinc-700"
     @click="changeColorMode"
   >
     <span class="flex dark:hidden items-center">

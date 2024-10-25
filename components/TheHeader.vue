@@ -28,7 +28,7 @@ router.afterEach(() => {
 </script>
 
 <template>
-  <header class="sticky bg-gray-50 dark:bg-gray-950 top-0 border-b border-gray-300 dark:border-gray-700 transition-colors">
+  <header class="sticky bg-zinc-50 dark:bg-zinc-950 top-0 border-b border-zinc-300 dark:border-zinc-700 transition-colors">
     <div class="flex justify-between items-center min-h-16 body-container">
       <div>
         <TheLogo />
@@ -41,10 +41,10 @@ router.afterEach(() => {
             :key="title"
           >
             <NuxtLink
-              active-class="text-gray-900 after:scale-100 dark:text-white"
+              active-class="text-zinc-900 after:scale-100 dark:text-white"
               :class="[
-                'relative flex justify-center text-gray-400 hover:text-gray-700 transition-colors dark:hover:text-gray-200',
-                'after:absolute after:top-[98%] after:w-[5px] after:h-[5px] after:rounded-full after:bg-gray-900 after:scale-0 after:transition-transform after: dark:after:bg-white after:pointer-events-none',
+                'relative flex justify-center text-zinc-400 hover:text-zinc-700 transition-colors dark:hover:text-zinc-200',
+                'after:absolute after:top-[98%] after:w-[5px] after:h-[5px] after:rounded-full after:bg-zinc-900 after:scale-0 after:transition-transform after: dark:after:bg-white after:pointer-events-none',
               ]"
               :to="href"
             >
@@ -57,7 +57,7 @@ router.afterEach(() => {
       <HeaderSocialLinks should-be-hidden-on-mobile />
 
       <button
-        class="flex md:hidden p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
+        class="flex md:hidden p-2 rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors"
         @click="shouldShowSidebar = true"
       >
         <Icon name="solar:hamburger-menu-line-duotone" />
@@ -67,10 +67,10 @@ router.afterEach(() => {
         <Transition>
           <div
             v-if="shouldShowSidebar"
-            class="fixed inset-0 z-10 bg-gray-50 dark:bg-gray-950 flex flex-col justify-center items-center gap-10 transition-colors text-gray-900 dark:text-white"
+            class="fixed inset-0 z-10 bg-zinc-50 dark:bg-zinc-950 flex flex-col justify-center items-center gap-10 transition-colors text-zinc-900 dark:text-white"
           >
             <button
-              class="absolute top-6 right-6 flex p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
+              class="absolute top-6 right-6 flex p-2 rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors"
               @click="shouldShowSidebar = false"
             >
               <Icon name="ph:x-bold" />
@@ -83,8 +83,8 @@ router.afterEach(() => {
                   :key="title"
                 >
                   <NuxtLink
-                    active-class="text-gray-900 after:scale-100 dark:text-white"
-                    class="text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
+                    active-class="text-zinc-900 after:scale-100 dark:text-white"
+                    class="text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors"
                     :to="href"
                   >
                     {{ title }}

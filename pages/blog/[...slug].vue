@@ -22,7 +22,7 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
         class="
           flex items-center gap-1 hover:gap-2
           text-sm font-semibold
-          text-gray-500 hover:text-gray-900 dark:hover:text-white
+          text-zinc-500 hover:text-zinc-900 dark:hover:text-white
           transition-all
         "
         to="/blog"
@@ -40,7 +40,7 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
         class="
           mt-2
           text-xs
-          text-gray-700 dark:text-gray-300
+          text-zinc-700 dark:text-zinc-300
           transition-colors
         "
         :datetime="blogDetails?.date"
@@ -58,7 +58,7 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
         mt-16
         inline-block
         text-sm font-mono
-        text-gray-500 hover:text-gray-900 dark:hover:text-white
+        text-zinc-500 hover:text-zinc-900 dark:hover:text-white
         transition-colors
       "
       to="/blog"
@@ -71,11 +71,11 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
 <style module>
 .blog {
   a {
-    @apply font-medium text-gray-900 underline underline-offset-4 decoration-gray-500 hover:decoration-gray-900 transition-colors;
+    @apply font-medium text-zinc-900 underline underline-offset-4 decoration-zinc-500 hover:decoration-zinc-900 transition-colors;
   }
 
   blockquote {
-    @apply border-l-2 border-gray-500 pl-4 py-1;
+    @apply border-l-2 border-zinc-500 pl-4 py-1;
   }
 }
 
