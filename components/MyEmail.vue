@@ -39,6 +39,7 @@ function handleCopy() {
           absolute left-[105%]
           inline-flex justify-center items-center
           text-xs font-medium
+          text-zinc-800 dark:text-zinc-200
           px-2 py-1
           rounded
           bg-zinc-100 dark:bg-zinc-800
