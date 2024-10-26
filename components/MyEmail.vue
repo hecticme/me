@@ -37,7 +37,7 @@ function handleCopy() {
       <span
         v-if="shouldShowCopyIndicator"
         class="
-          absolute left-[115%]
+          absolute left-[105%]
           inline-flex justify-center items-center
           text-xs font-medium
           px-2 py-1
@@ -65,6 +65,6 @@ function handleCopy() {
 .v-enter-from,
 .v-leave-to {
   opacity: 0;
-  transform: translateY(2px) scale(95%);
+  transform: translateX(-2px) scale(95%);
 }
 </style>
