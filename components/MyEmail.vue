@@ -24,14 +24,13 @@ function handleCopy() {
     class="
       relative
       w-fit
-      inline-flex justify-center
-      underline underline-offset-2
+      inline-flex justify-center items-center gap-1 hover:gap-2
       text-zinc-500 hover:text-zinc-900 dark:hover:text-white
-      transition-colors
+      transition-all
     "
     @click="handleCopy"
   >
-    Or send me an email
+    <Icon name="solar:arrow-right-line-duotone" /> Or send me an email
 
     <Transition>
       <span
