@@ -23,7 +23,7 @@
     <Divider />
 
     <div class="flex flex-col gap-2">
-      <MyContacts />
+      <MySocials />
 
       <MyEmail />
     </div>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const contracts = [
+const socials = [
   {
     href: 'https://github.com/hecticme',
     platformName: 'Github',
@@ -21,20 +21,20 @@ const contracts = [
 <template>
   <div class="flex flex-wrap gap-2">
     <NuxtLink
-      v-for="(contract, index) of contracts"
+      v-for="(social, index) of socials"
       :key="index"
       class="flex items-center gap-1 text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors"
       rel="noopener noreferrer"
       target="_blank"
-      :to="contract.href"
+      :to="social.href"
     >
       <Icon
         class="flex w-5 h-5"
-        :name="contract.iconName"
+        :name="social.iconName"
       />
 
       <span>
-        {{ contract.platformName }}
+        {{ social.platformName }}
       </span>
     </NuxtLink>
   </div>
