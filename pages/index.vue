@@ -20,7 +20,9 @@
       </p>
     </div>
 
-    <div class="flex flex-col gap-2 mt-12">
+    <Divider />
+
+    <div class="flex flex-col gap-2">
       <MyContacts />
 
       <MyEmail />
