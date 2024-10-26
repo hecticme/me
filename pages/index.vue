@@ -1,23 +1,13 @@
 <template>
   <section class="body-container">
-    <h1 class="font-serif font-bold text-4xl">
+    <h1 class="font-bold text-2xl">
       Hi 👋! I'm Ngọc Minh.
     </h1>
 
-    <p class="mt-6">
-      I keep trying until things make sense.
-    </p>
+    <div class="mt-6 flex flex-col gap-2">
+      <p>I do web stuff for a living.</p>
 
-    <div class="flex flex-col gap-4 mt-10">
-      <p>
-        Having challenged myself with illustration and design in the past,
-        I also consider myself a designer with an obsession with details.
-      </p>
-
-      <p>
-        Outside of programming, I enjoy playing RPG video games, mostly offline.
-        Immersing myself in adventures helps keeping me sane after work.
-      </p>
+      <p>There's not much to tell about me right now...</p>
     </div>
 
     <Divider />
