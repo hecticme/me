@@ -22,7 +22,7 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
         class="
           flex items-center gap-1 hover:gap-2
           text-sm font-semibold
-          text-zinc-500 hover:text-zinc-900 dark:hover:text-white
+          text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200
           transition-all
         "
         to="/blog"
@@ -58,7 +58,7 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
         mt-16
         inline-block
         text-sm font-mono
-        text-zinc-500 hover:text-zinc-900 dark:hover:text-white
+        text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200
         transition-colors
       "
       to="/blog"
@@ -81,7 +81,7 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
 
 :global(.dark) .blog {
   a {
-    @apply text-white hover:decoration-white;
+    @apply text-zinc-200 hover:decoration-white;
   }
 }
 </style>

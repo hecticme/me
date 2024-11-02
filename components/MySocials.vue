@@ -23,7 +23,7 @@ const socials = [
     <NuxtLink
       v-for="(social, index) of socials"
       :key="index"
-      class="flex items-center gap-1 text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors"
+      class="flex items-center gap-1 text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors"
       rel="noopener noreferrer"
       target="_blank"
       :to="social.href"
