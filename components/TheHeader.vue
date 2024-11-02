@@ -41,7 +41,7 @@ router.afterEach(() => {
             :key="title"
           >
             <NuxtLink
-              active-class="text-zinc-900 dark:text-zinc-200"
+              active-class="text-zinc-800 dark:text-zinc-200"
               class="text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors "
               :to="href"
             >
@@ -64,7 +64,7 @@ router.afterEach(() => {
         <Transition>
           <div
             v-if="shouldShowSidebar"
-            class="fixed inset-0 z-10 bg-zinc-50 dark:bg-zinc-950 flex flex-col justify-center items-center gap-10 transition-colors text-zinc-900 dark:text-zinc-200"
+            class="fixed inset-0 z-10 bg-zinc-50 dark:bg-zinc-950 flex flex-col justify-center items-center gap-10 transition-colors text-zinc-800 dark:text-zinc-200"
           >
             <button
               class="absolute top-6 right-6 flex p-2 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors"
@@ -80,7 +80,7 @@ router.afterEach(() => {
                   :key="title"
                 >
                   <NuxtLink
-                    active-class="text-zinc-900 dark:text-zinc-200"
+                    active-class="text-zinc-800 dark:text-zinc-200"
                     class="text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors "
                     :to="href"
                   >

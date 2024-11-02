@@ -22,7 +22,7 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
         class="
           flex items-center gap-1 hover:gap-2
           text-sm font-semibold
-          text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200
+          text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200
           transition-all
         "
         to="/blog"
@@ -58,7 +58,7 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
         mt-16
         inline-block
         text-sm font-mono
-        text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200
+        text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200
         transition-colors
       "
       to="/blog"
@@ -71,7 +71,7 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
 <style module>
 .blog {
   a {
-    @apply font-medium text-zinc-900 underline underline-offset-4 decoration-zinc-500 hover:decoration-zinc-900 transition-colors;
+    @apply font-medium text-zinc-800 underline underline-offset-4 decoration-zinc-500 hover:decoration-zinc-900 transition-colors;
   }
 
   blockquote {
