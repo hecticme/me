@@ -28,7 +28,7 @@ router.afterEach(() => {
 </script>
 
 <template>
-  <header class="sticky bg-zinc-50 dark:bg-zinc-950 top-0 border-b border-zinc-300 dark:border-zinc-700 transition-colors">
+  <header class="bg-zinc-50 dark:bg-zinc-950 border-b border-zinc-300 dark:border-zinc-700 transition-colors">
     <div class="flex justify-between items-center min-h-16 body-container">
       <div>
         <TheLogo />
