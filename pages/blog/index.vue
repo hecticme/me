@@ -34,7 +34,7 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
             flex items-center gap-4
             w-fit
             max-w-full
-            border-b-2 border-zinc-400 hover:border-zinc-700 dark:hover:border-zinc-200
+            border-b-2 border-zinc-500 hover:border-zinc-800 dark:hover:border-zinc-200
             transition-colors
           "
           :title="blog.title"
