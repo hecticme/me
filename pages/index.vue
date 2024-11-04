@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useSeoMeta({
+  title: '',
+})
+</script>
+
 <template>
   <section class="body-container">
     <h1 class="font-bold text-2xl">

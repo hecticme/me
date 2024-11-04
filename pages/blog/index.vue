@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Blog',
+})
+
 const { data: blogs } = await useAsyncData(
   'blogs',
   () => queryContent('blog')
