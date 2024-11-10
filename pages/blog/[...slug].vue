@@ -20,7 +20,7 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
     <section>
       <NuxtLink
         class="
-          flex items-center gap-1 hover:gap-2
+          inline-flex items-center gap-1 hover:gap-2
           text-sm font-semibold
           text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200
           transition-all
