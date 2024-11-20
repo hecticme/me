@@ -55,7 +55,7 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
 
     <NuxtLink
       class="
-        mt-16
+        mt-8
         inline-block
         text-sm font-mono
         text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200
