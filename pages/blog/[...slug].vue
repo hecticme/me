@@ -39,8 +39,8 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
       <time
         class="
           mt-2
-          text-xs
-          text-zinc-700 dark:text-zinc-300
+          text-sm
+          text-zinc-500
           transition-colors
         "
         :datetime="blogDetails?.date"
