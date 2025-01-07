@@ -16,17 +16,17 @@ const navLinks = [
 </script>
 
 <template>
-  <header class="bg-zinc-50 dark:bg-zinc-950 border-b border-zinc-300 dark:border-zinc-700 transition-colors">
+  <header class="pt-6">
     <div class="flex justify-between items-center min-h-16 body-container">
       <nav>
-        <ul class="flex gap-8 uppercase">
+        <ul class="flex gap-5 sm:gap-6 md:gap-8 uppercase">
           <li
             v-for="{ href, title } of navLinks"
             :key="title"
           >
             <NuxtLink
               active-class="text-zinc-800 dark:text-zinc-200"
-              class="text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors "
+              class="text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"
               :to="href"
             >
               {{ title }}
