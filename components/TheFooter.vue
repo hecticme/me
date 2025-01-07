@@ -4,7 +4,7 @@ const copyright = `2024-PRESENT © ${username}`
 </script>
 
 <template>
-  <footer class="bg-zinc-50 dark:bg-zinc-950 border-t border-zinc-300 dark:border-zinc-700 flex justify-center py-4 transition-colors">
+  <footer class="flex justify-center py-4">
     <p class="flex gap-2 text-sm text-zinc-500">
       <span class="transition-colors">
         {{ copyright }}
