@@ -35,7 +35,7 @@ const navLinks = [
         </ul>
       </nav>
 
-      <HeaderSocialLinks />
+      <ColorModeToggler />
     </div>
   </header>
 </template>
