@@ -35,7 +35,14 @@ useHead({
 
 .page-enter-from,
 .page-leave-to {
-  transform: translateY(6px);
   opacity: 0;
+}
+
+.page-enter-from {
+  transform: translateY(-5px);
+}
+
+.page-leave-to {
+  transform: translateY(5px);
 }
 </style>
