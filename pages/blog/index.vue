@@ -25,7 +25,7 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
     </h2>
 
     <p class="mt-6">
-      To remember who I was ✍️.
+      To remember who I was.
     </p>
 
     <ul class="mt-10 flex flex-col gap-6">
