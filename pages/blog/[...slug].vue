@@ -71,7 +71,7 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
 <style module>
 .blog {
   a {
-    @apply font-medium text-zinc-800 underline underline-offset-4 decoration-zinc-500 hover:decoration-zinc-900 transition-colors;
+    @apply font-medium text-zinc-800 underline underline-offset-4 decoration-zinc-400 hover:decoration-black transition-colors;
   }
 
   blockquote {
@@ -81,7 +81,7 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
 
 :global(.dark) .blog {
   a {
-    @apply text-zinc-200 hover:decoration-white;
+    @apply text-zinc-200 decoration-zinc-600 hover:decoration-white;
   }
 }
 </style>
