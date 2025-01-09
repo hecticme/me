@@ -19,7 +19,7 @@ useHead({
   >
     <TheHeader />
 
-    <main class="pt-8 pb-14 flex-grow">
+    <main class="pt-8 pb-14 flex-grow page-transition">
       <NuxtPage />
     </main>
 
@@ -28,17 +28,19 @@ useHead({
 </template>
 
 <style>
-.page-enter-active {
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.page-transition > * {
+  animation: enter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-}
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
 
-.page-enter-from {
-  transform: translateY(-6px);
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 </style>
