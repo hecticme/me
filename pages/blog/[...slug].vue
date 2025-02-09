@@ -71,17 +71,36 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
 <style module>
 .blog {
   a {
-    @apply font-medium text-zinc-800 underline underline-offset-4 decoration-zinc-400 hover:decoration-black transition-colors;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-zinc-800);
+    text-decoration: underline;
+    text-decoration-color: var(--color-zinc-400);
+    text-underline-offset: 0.25rem;
+
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--default-transition-timing-function);
+    transition-duration: var(--default-transition-duration);
+
+    &:hover {
+      text-decoration-color: var(--color-black);
+    }
   }
 
   blockquote {
-    @apply border-l-2 border-zinc-500 pl-4 py-1;
+    border-inline-start: 2px var(--color-zinc-500);
+    padding-inline-start: calc(var(--spacing) * 4);
+    padding-block: var(--spacing);
   }
 }
 
 :global(.dark) .blog {
   a {
-    @apply text-zinc-200 decoration-zinc-600 hover:decoration-white;
+    color: var(--color-zinc-200);
+    text-decoration-color: var(--color-zinc-600);
+
+    &:hover {
+      text-decoration-color: var(--color-white);
+    }
   }
 }
 </style>
