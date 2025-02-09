@@ -14,7 +14,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/color-mode',
     '@nuxt/content',
-    '@nuxt/fonts',
     '@nuxt/test-utils/module',
     '@nuxt/icon',
   ],
