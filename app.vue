@@ -19,7 +19,7 @@ useHead({
   >
     <TheHeader />
 
-    <main class="pt-8 pb-14 flex-grow page-transition">
+    <main class="pt-8 pb-14 grow page-transition">
       <NuxtPage />
     </main>
 
