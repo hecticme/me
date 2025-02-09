@@ -41,7 +41,7 @@ function handleCopy() {
           text-xs font-medium
           text-zinc-800 dark:text-zinc-200
           px-2 py-1
-          rounded
+          rounded-sm
           bg-zinc-100 dark:bg-zinc-800
           border border-zinc-300 dark:border-zinc-700
           transition-colors

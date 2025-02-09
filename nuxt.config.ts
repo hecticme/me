@@ -1,3 +1,5 @@
+import tailwindcss from '@tailwindcss/vite'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-08-04',
@@ -12,14 +14,12 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/color-mode',
     '@nuxt/content',
-    '@nuxt/fonts',
     '@nuxt/test-utils/module',
     '@nuxt/icon',
   ],
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
   },
 })
