@@ -51,6 +51,7 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
 
     <article :class="$style.blog">
       <ContentRenderer
+        v-if="blogDetails"
         class="mt-8 flex flex-col gap-6 leading-relaxed"
         :value="blogDetails!"
       />
