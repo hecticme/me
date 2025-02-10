@@ -5,10 +5,10 @@ useSeoMeta({
 
 const { data: blogs } = await useAsyncData(
   'blogs',
-  () => queryContent('blog')
-    .only(['title', 'date', '_path'])
-    .find()
-    .then(result => result.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()))
+  () => queryCollection('blog')
+    .order('date', 'DESC')
+    .select('title', 'date', 'path')
+    .all()
 )
 
 const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
@@ -30,8 +30,8 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
 
     <ul class="mt-10 flex flex-col gap-6">
       <li
-        v-for="(blog, index) of blogs"
-        :key="index"
+        v-for="blog of blogs"
+        :key="blog.path"
       >
         <NuxtLink
           class="
@@ -41,7 +41,7 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
             transition-colors
           "
           :title="blog.title"
-          :to="blog._path"
+          :to="blog.path"
         >
           <span class="font-semibold text-ellipsis overflow-hidden whitespace-nowrap">
             {{ blog.title }}
