@@ -3,9 +3,9 @@ const route = useRoute()
 
 const { data: blogDetails } = await useAsyncData(
   route.path,
-  () => queryContent(route.path)
-    .only(['title', 'date'])
-    .findOne()
+  () => queryCollection('blog')
+    .path(route.path)
+    .first()
 )
 
 const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
@@ -45,12 +45,15 @@ const { format: formatDate } = new Intl.DateTimeFormat('en-US', {
         "
         :datetime="blogDetails?.date"
       >
-        {{ formatDate(new Date(blogDetails?.date)) }}
+        {{ formatDate(new Date(blogDetails?.date!)) }}
       </time>
     </section>
 
     <article :class="$style.blog">
-      <ContentDoc class="mt-8 flex flex-col gap-6 leading-relaxed" />
+      <ContentRenderer
+        class="mt-8 flex flex-col gap-6 leading-relaxed"
+        :value="blogDetails!"
+      />
     </article>
 
     <NuxtLink
